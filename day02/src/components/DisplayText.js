@@ -5,6 +5,8 @@ class DisplayText extends Component {
 
     toggleText = () => {
         this.setState({display: !this.state.display});
+        // this is an async function
+        console.log(this.state);
     }
 
     render() { 
