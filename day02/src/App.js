@@ -1,5 +1,6 @@
 import './App.css';
 import Counter from './components/Counter';
+import DisplayText from './components/DisplayText';
 import Loading from './components/Loading';
 import Products from './components/Products';
 
@@ -19,7 +20,10 @@ function App() {
       <Products products={products}></Products>
 
       <Counter></Counter>
-
+      <br/>
+      <br/>
+        <DisplayText></DisplayText>
+      <br/>
       <button onClick={showAlert}>Click me</button>
       <button onClick={() => showAlertWithText("submit")}>Submit</button>
       <button onClick={() => showAlertWithText("cancel")}>Cancel</button>
