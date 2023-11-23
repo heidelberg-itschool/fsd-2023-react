@@ -4,10 +4,15 @@ class Clock extends Component {
     state = {date: new Date()};
   
     componentDidMount() {
+      console.log("loading component");
       this.timerID = setInterval(
         () => this.tick(),
         1000
       );
+    }
+
+    componentDidUpdate() {
+      console.log("update");
     }
   
     componentWillUnmount() {
