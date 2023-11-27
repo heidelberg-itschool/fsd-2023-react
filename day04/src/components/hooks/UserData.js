@@ -10,8 +10,9 @@ function UserData({userName}) {
     }, [userName]);
 
     // useEffect(() => { // this will render every time a prop or a state is updated and will go in a loop
-    //  fetchUserData(userName);
-    //}) 
+    //     console.log("run");
+    //     fetchUserData(userName);
+    // }) 
 
     const fetchUserData = async(name) => {
         const result = await fetch(`https://api.agify.io/?name=${name}`);
