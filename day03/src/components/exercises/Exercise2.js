@@ -15,7 +15,6 @@ function Exercise2() {
         setList(newList);
     }
 
-
     return(
         <>
             <input type="text" value={item} onChange ={(event) =>setItem(event.target.value)}/>
