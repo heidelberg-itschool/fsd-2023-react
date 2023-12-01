@@ -1,0 +1,7 @@
+input {
+    display: block;
+    width: 200px;
+    box-sizing: border-box;
+    margin: 20px;
+    padding: 10px;
+}
