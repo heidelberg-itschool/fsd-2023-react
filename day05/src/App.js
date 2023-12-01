@@ -7,6 +7,8 @@ import Dashboard from './pages/Dashboard';
 import NotFound from './pages/NotFound';
 import Layout from './layouts/Layout';
 import Product from './pages/Product';
+import Houses from './components/exercises/Houses';
+import House from './components/exercises/House';
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
           <Route path='/product/:id' element={<Product/>} />
           <Route path='/category/:categoryId/product/:productId?' element={<Product/>} />
           <Route path='/form' element={<Form/>} />
+          <Route path='/houses' element={<Houses/>} />
+          <Route path='/house/:id' element={<House/>} />
           <Route path='*' element={<NotFound/>} />
         </Route>
       </Routes>
