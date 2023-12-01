@@ -11,19 +11,17 @@ import Product from './pages/Product';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <Routes>
-          <Route path='/' element={<Layout/>}>
-            <Route index element={<Home/>} />
-            <Route path='/about' element={<About/>} />
-            <Route path='/dashboard' element={<Dashboard/>} />
-            <Route path='/product/:id' element={<Product/>} />
-            <Route path='/category/:categoryId/product/:productId?' element={<Product/>} />
-            <Route path='/form' element={<Form/>} />
-            <Route path='*' element={<NotFound/>} />
-          </Route>
-        </Routes>
-      </header>
+      <Routes>
+        <Route path='/' element={<Layout/>}>
+          <Route index element={<Home/>} />
+          <Route path='/about' element={<About/>} />
+          <Route path='/dashboard' element={<Dashboard/>} />
+          <Route path='/product/:id' element={<Product/>} />
+          <Route path='/category/:categoryId/product/:productId?' element={<Product/>} />
+          <Route path='/form' element={<Form/>} />
+          <Route path='*' element={<NotFound/>} />
+        </Route>
+      </Routes>
     </div>
   );
 }
