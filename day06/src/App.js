@@ -1,8 +1,10 @@
 import { Route, Routes } from 'react-router-dom';
 import './assets/styles/layout.scss';
 import './App.scss';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './pages/Home/Home';
 import About from './pages/About/About';
+import Dashboard from './pages/Dashboard/Dashboard';
 
 function App() {
   return (
@@ -11,6 +13,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home active={false} />}/>
           <Route path='/about' element={<About/>}/>
+          <Route path='/dashboard' element={<Dashboard/>}/>
         </Routes>
       </header>
     </div>
