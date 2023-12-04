@@ -1,0 +1,4 @@
+#home-title { 
+    /* selecting h1 will affect every page */
+    color: lightcoral;
+}
