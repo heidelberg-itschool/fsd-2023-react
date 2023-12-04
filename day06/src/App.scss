@@ -1,3 +1,5 @@
+@import './assets/styles/theming';
+
 .App {
   text-align: center;
 }
@@ -18,7 +20,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: $color-primary;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -29,7 +31,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: $color-secondary;
 }
 
 @keyframes App-logo-spin {

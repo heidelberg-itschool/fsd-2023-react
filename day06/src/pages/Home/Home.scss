@@ -1,10 +1,10 @@
+@import'./../../assets/styles/theming';
 #home {
     #home-title { 
         /* selecting h1 will affect every page */
-        color: lightcoral;
+        color: $color-secondary;
     }
     a {
-        color: white;
         text-decoration: none;
     }
 }
