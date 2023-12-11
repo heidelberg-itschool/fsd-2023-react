@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 
 function Child({products}) {
     const count = useRef(0);
@@ -15,4 +15,4 @@ function Child({products}) {
     </> );
 }
 
-export default Child;
+export default React.memo(Child); // prevents unnecessary re-renders
