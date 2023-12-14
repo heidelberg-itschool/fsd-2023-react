@@ -5,7 +5,9 @@ function Main() {
     return (
         <>
             <Header/>
-            <Outlet/>
+            <div className="main">
+                <Outlet/>
+            </div>
         </>
      );
 }
