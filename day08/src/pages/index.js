@@ -4,3 +4,4 @@ export {default as NotFound} from './NotFound';
 export {default as Product} from './Product';
 export {default as Products} from './Products';
 export {default as ToDo} from './ToDo';
+export {default as Counter} from './Counter';
