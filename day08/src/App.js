@@ -1,11 +1,10 @@
 import { useState } from 'react';
 import './App.css';
 import UserContext from './context/UserContext';
-import Home from './pages/Home';
-import Products from './pages/Products';
-import Login from './pages/Login';
+import {Home, Login, Product, Products, NotFound} from './pages';
 import { Routes, Route } from 'react-router-dom';
-import NotFound from './pages/NotFound';
+import RouterRedirect from './layout/RouterRedirect';
+import Main from './layout/Main';
 
 function App() {
   const [user, setUser] = useState({});
@@ -14,10 +13,17 @@ function App() {
     <div className="App">
       <UserContext.Provider value={{user, setUser}}>
         <Routes>
-          <Route path='/' element={<Home/>} />
-          <Route path='/login' element={<Login/>} />
-          <Route path='/products' element={<Products/>} />
-          <Route path='*' element={<NotFound/>} />
+          <Route path='/' element={<Main/>} >
+
+            <Route path='/' element={<RouterRedirect/> }>
+            <Route path='/' element={<Home/>} />
+              <Route path='/products' element={<Products/>} />
+              <Route path='/product' element={<Product/>} />
+            </Route>
+
+            <Route path='/login' element={<Login/>} />
+            <Route path='*' element={<NotFound/>} />
+          </Route>
         </Routes>
       </UserContext.Provider>
     </div>

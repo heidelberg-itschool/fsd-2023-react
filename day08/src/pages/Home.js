@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 
 function Home() {
     const { user } = useContext(UserContext);
-    console.log(user);
 
     return ( <>
         <h1>Home page</h1> 
