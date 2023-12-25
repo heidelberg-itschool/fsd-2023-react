@@ -1,5 +1,13 @@
+import { useSelector } from "react-redux";
+import CardCocktail from "../components/Cocktail/CardCocktail";
+
 function Card() {
-    return ( <h1>Card page</h1> );
+    const products = useSelector(state => state.card);
+    return ( 
+    <>
+        <h1>Your Card</h1>
+        {products.map(product => <CardCocktail key={product.idDrink} cocktail={product} />)}
+    </> );
 }
 
 export default Card;
