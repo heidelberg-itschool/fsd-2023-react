@@ -1,10 +1,6 @@
 import './App.scss';
 import { Route, Routes } from 'react-router-dom';
-import Home from './pages/Home';
-import Products from './pages/Products';
-import Product from './pages/Product';
-import Card from './pages/Card';
-import NotFound from './pages/NotFound';
+import {Home, Products, Product, Card, NotFound} from './pages';
 import Main from './layout/Main';
 
 function App() {

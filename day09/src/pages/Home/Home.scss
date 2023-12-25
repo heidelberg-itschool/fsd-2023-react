@@ -1,0 +1,21 @@
+@import './../../assets/style/theming';
+
+#home {
+    .container {
+        position: relative;
+        text-align: center;
+    }
+
+    .content {
+        position: absolute;
+        top: 100px;
+        left: 0;
+        right: 0;    
+        color: $color-primary;
+    }
+
+    #cocktails {
+        width: 100%;
+        opacity: 60%;
+    }
+}
