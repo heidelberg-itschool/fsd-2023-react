@@ -9,7 +9,7 @@ function Home() {
             <img id='cocktails' src={cocktails} alt="cocktails" />
             <div className='content'>
                 <h1>We have the best cocktails</h1>
-                <Link className='btn' to='/products'>Choose your favorite</Link>
+                <Link className='btn btn-secondary' to='/products'>Choose your favorite</Link>
             </div>
         </div>
 
