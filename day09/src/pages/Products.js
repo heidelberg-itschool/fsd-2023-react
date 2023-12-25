@@ -1,17 +1,21 @@
-import {useEffect, useState} from 'react';
+import {useEffect} from 'react';
 import Cocktail from '../components/Cocktail/Cocktail.js';
 import CocktailService from '../services/cocktail.js';
+import { useDispatch, useSelector } from 'react-redux';
+import { getAll } from '../store/cocktailsSlice.js';
 
 function Products() {
-    const [drinks, setDrinks] = useState([]);
+    const drinks = useSelector(state => state.cocktails);
+    const dispatch = useDispatch();
 
     useEffect(() => {
-        getAllCocktails()
+        if(!drinks.length)
+            getAllCocktails()
     }, []);
 
     const getAllCocktails = async() => {
         const drinks = await CocktailService.getAllCocktails();
-        setDrinks(drinks);
+        dispatch(getAll(drinks));
     }
 
     return ( 
