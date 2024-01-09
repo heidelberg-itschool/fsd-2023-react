@@ -5,7 +5,7 @@ function CardCocktail({cocktail}) {
         <div className="cocktail">
             <img src={cocktail.strDrinkThumb} alt={cocktail.strDrink}/>
             <h3>{cocktail.strDrink}</h3>
-            <p>Quantity: {cocktail.quantity}</p>
+            <p>Quantity: <span data-cy="quantity">{cocktail.quantity}</span></p>
         </div>
     );
 }

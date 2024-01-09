@@ -17,7 +17,7 @@ function Cocktail({cocktail, viewCocktail}) {
             <h3>{cocktail.strDrink}</h3>
             {cocktail.strInstructions && <p>{cocktail.strInstructions}</p>}
             {viewCocktail && <Link to={`/product/${cocktail.idDrink}`} className='btn btn-secondary'>View cocktail</Link>}
-            <button onClick={addToCard} className='btn btn-primary'>Add to card</button>
+            <button onClick={addToCard} data-cy="add-to-card" className='btn btn-primary'>Add to card</button>
         </div>
     );
 }

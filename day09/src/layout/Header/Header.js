@@ -9,8 +9,8 @@ function Header() {
                 <NavLink to='/'><img id="logo" src={logo} alt="logo"/></NavLink>
             </div>
             <div className="links navigate">
-                <NavLink to='/products'>Products</NavLink>
-                <NavLink to='/card'>Card</NavLink>
+                <NavLink data-cy="products-link" to='/products'>Products</NavLink>
+                <NavLink data-cy="card-link" to='/card'>Card</NavLink>
             </div>
         </header>
     );
